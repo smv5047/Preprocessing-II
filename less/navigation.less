@@ -10,10 +10,30 @@ nav {
     border-bottom: 2px dashed gray;
     padding: 0 5%;
 
+    @media @mobile {
+        max-width: 500px;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        
+    }
+
+    h1 {
+        @media @mobile {
+            font-size: 3rem;
+            margin-top: 10px;
+        }
+    }
+
     .nav-links{
         display: flex;
         width: 40%;
         margin-right: 5%;
+
+        @media @mobile {
+            width: 100%;
+            margin-right: 0;
+            justify-content: space-evenly;
+        }
     }
 
     a {
@@ -21,6 +41,11 @@ nav {
         font-size: 1.5rem;
         color: black;
         padding-left: 10%;
+
+        @media @mobile {
+            padding-left: 0;
+            font-size: 1.75rem;
+        }
 
         &:hover{
             text-decoration: underline;
