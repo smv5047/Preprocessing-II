@@ -314,9 +314,49 @@ nav a:hover {
 .home .content-destination img {
   border-radius: 10px;
 }
+.home .content-destination h4 {
+  padding: 30px 0 20px 0;
+  text-align: center;
+}
+.home .content-destination form {
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 0;
+}
+.home .content-destination form .vacation-form {
+  margin: 0 auto;
+  text-align: center;
+}
+.home .content-destination form input {
+  width: 25%;
+}
+.home .content-destination form .form-row {
+  padding: 10px 0;
+}
+.home .content-destination .btn {
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 10px 5%;
+  text-align: center;
+  width: 80%;
+  color: white;
+  background: teal;
+  width: 25%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home .content-destination .btn {
+    width: 100%;
+  }
+}
+.home .content-destination .btn:hover {
+  background: green;
+  transition: color 0.5s ease-out 0.25s;
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
@@ -350,4 +390,8 @@ nav a:hover {
   .home .content-pick .destination .btn {
     width: 100%;
   }
+}
+.home .content-pick .destination .btn:hover {
+  background: green;
+  transition: color 0.5s ease-out 0.25s;
 }

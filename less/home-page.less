@@ -79,13 +79,50 @@
     img {
       border-radius: 10px;
     }
+
+    h4 {
+      padding: 30px 0 20px 0;
+      text-align: center;
+    }
+
+    
+    form {
+      margin: 0 auto;
+      text-align: center;
+      padding: 25px 0;
+
+      .vacation-form {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      input {
+        width: 25%;
+      }
+
+      .form-row {
+        padding: 10px 0;
+      }
+    }
+    .btn{
+      .button(white, teal);
+      
+      width: 25%;
+      margin: 0 auto;
+    }
+
+    .btn:hover {
+      .buttonanimation();
+    }
   }
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
 
     @media @mobile {
       flex-flow: column wrap;
@@ -105,6 +142,11 @@
       .btn{
         .button(white, teal)
       }
+
+      .btn:hover {
+        .buttonanimation();
+      }
     }
   }
+
 }// home
